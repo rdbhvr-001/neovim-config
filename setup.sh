@@ -5,6 +5,14 @@
 # Truely, I hate editing configs. So it is vibe coded for 100%.
 
 CONFIG_DIR="$HOME/.config"
+# Install neovim again in arch linux if it did not exist : Safety purposes
+echo "[Info] Need to install neovim"
+sudo pacman -S neovim --needed
+echo ""
+# Install ripgrep, a dependency for neovim
+echo "[Info] Need to install ripgrep"
+sudo pacman -S ripgrep --needed
+echo ""
 # Backup any old nvim configs if it existed
 if [[ -d "$CONFIG_DIR/nvim" ]]; then
     echo "[Info] Backing up your nvim config to $CONFIG_DIR/nvim.old"
@@ -19,6 +27,5 @@ echo "      [Step 2] mv ~/.config/nvim.old ~/.config/nvim"
 echo ""
 cp -rv ./nvim $CONFIG_DIR/nvim
 echo "[+] Done, Enjoy nvim"
-
 
 

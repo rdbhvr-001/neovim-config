@@ -165,3 +165,19 @@ map("n", "K", vim.lsp.buf.hover)
 map("n", "<F2>", vim.lsp.buf.rename)
 map("n", "<F12>", vim.lsp.buf.definition)
 map("n", "<leader>ca", vim.lsp.buf.code_action)
+
+--------------------------------------------------
+-- INSERT MODE: VS CODE–LIKE KEYBINDINGS
+--------------------------------------------------
+
+-- Save
+vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>a")
+
+-- Quit
+vim.keymap.set("i", "<C-x>", "<Esc>:q<CR>")
+
+-- Save & Exit
+vim.keymap.set("i", "<C-S-s>", "<Esc>:wq<CR>")
+
+-- Exit without Saving
+vim.keymap.set("i", "<C-S-x>", "<Esc>:q!<CR>")
