@@ -22,10 +22,11 @@ opt.mouse = "a"
 opt.clipboard = "unnamedplus"
 opt.signcolumn = "yes"
 opt.cursorline = true
-opt.wrap = false
+opt.wrap = true
 opt.scrolloff = 8
 opt.sidescrolloff = 8
 opt.linebreak = true
+opt.breakindent = true
 --------------------------------------------------
 -- FILETYPE-SPECIFIC: MAKEFILES (use real tabs)
 --------------------------------------------------
