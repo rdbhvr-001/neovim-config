@@ -25,7 +25,7 @@ opt.cursorline = true
 opt.wrap = false
 opt.scrolloff = 8
 opt.sidescrolloff = 8
-
+opt.linebreak = true
 --------------------------------------------------
 -- FILETYPE-SPECIFIC: MAKEFILES (use real tabs)
 --------------------------------------------------
